@@ -6,7 +6,7 @@
 <div class="mt-5">
     <div class="container-lg ">
         <div class="text-center ">
-            <h2>Modifiez l'Oeuvre  d'oeuvre</h2>
+            <h2>Modifiez l'Oeuvre</h2>
             <p class="lead"> Remplissez les champs de L'Oeuvre</p>
         </div>
        <div class="row justify-content-center my-5">

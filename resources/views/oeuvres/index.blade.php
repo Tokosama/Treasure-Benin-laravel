@@ -9,7 +9,7 @@
                 </div>
              @endif
             <h1>Oeuvre Du BENIN</h1>
-            <p class="lead"> Welcome to our webste</p>
+            <p class="lead">Vous avez devant vous la liste des Oeuvres actuellement disponibles</p>
             <a href="/oeuvre/create" class="btn btn-primary">Ajouter une oeuvre</a>
 
         </div>
@@ -36,12 +36,12 @@
                 <td>{{$oeuvre->categorie->nomCategorie}}</td>
                 <td class="d-flex justify-content-between">
                     <div>
-                        <a href={{route('oeuvre.edit',['oeuvre'=>$oeuvre->idOeuvre])}} class="btn btn-success"> Modifier </a>
+                        <a href={{route('oeuvre.edit',['oeuvre'=>$oeuvre->idOeuvre])}} class="btn btn-success ms-2 px-4"> Modifier </a>
                     </div>
                     <form action={{route('oeuvre.destroy',['oeuvre'=>$oeuvre])}} method="post"  onsubmit="return confirmDelete()">
                         @csrf
                         @method('delete')
-                        <input type="submit" class="btn btn-danger" value="delete">
+                        <input type="submit" class="btn btn-danger  me-2 px-4" value="delete">
                     </form>
                 </td>
        
@@ -53,7 +53,7 @@
         </tbody>
         <script>
             function confirmDelete() {
-                return confirm("Êtes-vous sûr de vouloir supprimer ce produit ?");
+                return confirm("Êtes-vous sûr de vouloir supprimer cet Oeuvre ?");
             }
         </script>
     </table>
